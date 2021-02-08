@@ -1,14 +1,16 @@
 Dieses Dokument soll dir helfen, damit du dich in den Dateien (auf GitHub) zurechtfindest.
 Bevor du loslegst, empfiehlt es sich in der Anleitung (01 - Anleitung - Multi-Monitoring Gadget) die Kapitel 1 und 2 zu lesen.
 
-Schritt 1 - Baue das Gadget zusammen, dafür schaust du dir das Video >02 - Gadget Platinenbestückung< an. Der Aufbau des Gadgets wurde in der Anleitung (Kapitel 3) niedergeschrieben und mit Bildern illustriert. 
+Schritt 1 - Baue das Gadget zusammen, dafÃ¼r schaust du dir das Video >02 - Gadget PlatinenbestÃ¼ckung< an. Der Aufbau des Gadgets wurde in der Anleitung (Kapitel 3) niedergeschrieben und mit Bildern illustriert. 
 
 Schritt 2 - (Optional) Lies das 4te Kapitel aus der Anleitung.
 
-Schritt 3 - Programmierung vom Gadget - dafür schaust du dir die Videos an, die du im Ordner >03 - Programmierung Video< findest. Ergänzend dazu nutzt du am besten die Anleitung (Kapitel 5 - Anleitung – Programmierung - Multi-MonG), weil du dort, wie du in den Videos sehen wirst, einen Link herauskopieren musst. 
+Schritt 3 - Programmierung vom Gadget - dafÃ¼r schaust du dir die Videos an, die du im Ordner >03 - Programmierung Video< findest. ErgÃ¤nzend dazu nutzt du am besten die Anleitung (Kapitel 5 - Anleitung â€“ Programmierung - Multi-MonG), weil du dort, wie du in den Videos sehen wirst, einen Link herauskopieren musst. 
 
 Schritt 4 - Gadget nutzen und betreiben - Anleitung (Kapitel 6 - Inbetriebnahme).
 
-Schritt 5 - Schlusswort aus der Anleitung (Kapitel 7)
+Schritt 5 - Luftsensor richtig nutzen und einstellen - Anleitung (Kapitel 6 -	Inbetriebnahme des Sensors fÃ¼r die LuftqualitÃ¤t).
+
+Schritt 6 - Schlusswort aus der Anleitung (Kapitel 7)
  
 
