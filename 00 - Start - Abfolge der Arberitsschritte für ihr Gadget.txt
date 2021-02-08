@@ -9,8 +9,8 @@ Schritt 3 - Programmierung vom Gadget - dafür schaust du dir die Videos an, die
 
 Schritt 4 - Gadget nutzen und betreiben - Anleitung (Kapitel 6 - Inbetriebnahme).
 
-Schritt 5 - Luftsensor richtig nutzen und einstellen - Anleitung (Kapitel 6 -	Inbetriebnahme des Sensors für die Luftqualität).
+Schritt 5 - Luftsensor richtig nutzen und einstellen - Anleitung (Kapitel 7 -	Inbetriebnahme des Sensors für die Luftqualität).
 
-Schritt 6 - Schlusswort aus der Anleitung (Kapitel 7)
+Schritt 6 - Schlusswort aus der Anleitung (Kapitel 8)
  
 
