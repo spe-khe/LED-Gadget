@@ -8,7 +8,8 @@ Schritt 2 - (Optional) Lies das 4te Kapitel aus der Anleitung.
 
 Schritt 3 - Downloade dir die Arduino Software - https://www.arduino.cc/en/software
 
-Schritt 4 - Programmierung vom Gadget - dafür schaust du dir die Videos an, die du im Ordner >03 - Programmierung Video< findest. Ergänzend dazu nutzt du am besten die Anleitung (Kapitel 5 - Anleitung – Programmierung - Multi-MonG), weil du dort, wie du in den Videos sehen wirst, einen Link herauskopieren musst. 
+Schritt 4 - Programmierung vom Gadget - dafür schaust du dir die Videos an, die du im Ordner >03 - Programmierung Video< findest. Ergänzend dazu nutzt du am besten die Anleitung (Kapitel 5 - Anleitung – Programmierung - Multi-MonG). 
+Folgender Link wird zwischenzeitlich benötigt - http://arduino.esp8266.com/stable/package_esp8266com_index.json
 
 
 Schritt 5 - Gadget nutzen und betreiben - Anleitung (Kapitel 6 - Inbetriebnahme).
