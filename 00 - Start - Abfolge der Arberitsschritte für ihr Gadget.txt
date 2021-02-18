@@ -1,6 +1,9 @@
 Dieses Dokument soll dir helfen dich in den Dateien (auf GitHub) zurechtzufinden. (Tipp: Berücksichtige die Versionen)
 Bevor du loslegst, empfiehlt es sich in der Anleitung (01 - Anleitung - Multi-Monitoring Gadget) die Kapitel 1 und 2 zu lesen.
 
+Tipp: Im Prozess entstehen Fragen, auf die man gerne sofort eine Antwort hätte. Aus diesem Grund haben wird eine PDF-Datei erstellt, mit häufig gestellten Fragen.
+     
+
 Schritt 1 - Baue das Gadget zusammen, dafür schaust du dir das Video >02 - Gadget Platinenbestückung< an. Der Aufbau des Gadgets ist in der Anleitung (Kapitel 3) niedergeschrieben und mit Bildern illustriert. 
 ACHTUNG: Es gibt zwei Versionen des Gadget. Wenn du die 2te Version hast, also v2, dann schau dir die entsprechenden Teile an. (Teil 1 und 2 sind gleich | Teil 3 und 4 nicht) 
 
