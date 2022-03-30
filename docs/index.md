@@ -44,17 +44,17 @@ Insgesamt besteht das Gadget aus den folgenden acht Bauteilen:
 * LED-Matrix
 
 <div class="flex-container" style="margin: 1em">
-        <img src="assets/images/Platine.png" style="height: 10em">
-        <img src="assets/images/Holzbrett.png" style="height: 10em">
-        <img src="assets/images/Taster.png" style="height: 10em">
-        <img src="assets/images/Buzzer.png" style="height: 10em">
-        <img src="assets/images/Steckleisten.png" style="height: 10em">
-        <img src="assets/images/Winkel.png" style="height: 10em">
-        <img src="assets/images/ESP8266.jpg" style="height: 10em">
-        <img src="assets/images/DHT11.png" style="height: 10em">
-        <img src="assets/images/Verbinder.png" style="height: 10em">
-        <img src="assets/images/MQ135.png" style="height: 10em">
-        <img src="assets/images/Matrix.png" style="height: 10em">
+        <img src="assets/images/Platine.png" style="height: 5em">
+        <img src="assets/images/Holzbrett.png" style="height: 5em">
+        <img src="assets/images/Taster.png" style="height: 5em">
+        <img src="assets/images/Buzzer.png" style="height: 5em">
+        <img src="assets/images/Steckleisten.png" style="height: 5em">
+        <img src="assets/images/Winkel.png" style="height: 5em">
+        <img src="assets/images/ESP8266.jpg" style="height: 5em">
+        <img src="assets/images/DHT11.png" style="height: 5em">
+        <img src="assets/images/Verbinder.png" style="height: 5em">
+        <img src="assets/images/MQ135.png" style="height: 5em">
+        <img src="assets/images/Matrix.png" style="height: 5em">
 </div>
 
 Diese Bauteile müssen korrekt verdrahtet bzw. miteinander verbunden werden, damit die entsprechenden Funktionen gegeben sind. Diese Aufgabe übernimmt die Platine für uns. Auf ihr befinden sich Leiterbahnen, die die Verbindungen zwischen den Modulen und dem Mikrocontroller herstellen.
