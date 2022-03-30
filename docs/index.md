@@ -28,7 +28,7 @@ sind die Helden hinter den Dingen. Viele Geräte wären ohne einen Mikrocontroll
 
 Die Aufgaben sind vielfältig und so auch die Möglichkeiten, die sich dadurch ergeben. Ein Mikrocontroller muss für seine zu bewerkstelligende Aufgabe programmiert werden. Diesen Programmcode durchläuft der Mikrocontroller immer wieder „unendlich oft“. So führt er präzise seine Aufgabe aus und kommt dabei nicht durcheinander, denn er führt Zeile für Zeile in seinem programmierten Code aus. Dadurch wird auch deutlich, dass die Programmierung ein wesentlicher Bestandteil der Elektrotechnik ist und immer mehr Einzug erhält.
 
-![ESP8266](docs/assets/images/ESP8266.jpg)
+![ESP8266](assets/images/ESP8266.jpg)
 
 ## Aufbau
 Insgesamt besteht das Gadget aus den folgenden acht Bauteilen:
