@@ -27,7 +27,7 @@ sind die Helden hinter den Dingen. Viele Geräte wären ohne einen Mikrocontroll
 * Erfassung von Messwerten z.B. Drehzahl
 
 Die Aufgaben sind vielfältig und so auch die Möglichkeiten, die sich dadurch ergeben. Ein Mikrocontroller muss für seine zu bewerkstelligende Aufgabe programmiert werden. Diesen Programmcode durchläuft der Mikrocontroller immer wieder „unendlich oft“. So führt er präzise seine Aufgabe aus und kommt dabei nicht durcheinander, denn er führt Zeile für Zeile in seinem programmierten Code aus. Dadurch wird auch deutlich, dass die Programmierung ein wesentlicher Bestandteil der Elektrotechnik ist und immer mehr Einzug erhält.
-
+Wir verwenden in dem Gadget den Mikrocontroller ESP2866:
 ![ESP8266](assets/images/ESP8266.jpg)
 
 ## Aufbau
@@ -44,22 +44,22 @@ Insgesamt besteht das Gadget aus den folgenden acht Bauteilen:
 * LED-Matrix
 
 <div class="flex-container" style="margin: 1em">
-        <img src="docs/assets/images/Platine.png" style="height: 10em">
-        <img src="docs/assets/images/Holzbrett.png" style="height: 10em">
-        <img src="docs/assets/images/Taster.png" style="height: 10em">
-        <img src="docs/assets/images/Buzzer.png" style="height: 10em">
-        <img src="docs/assets/images/Steckleisten.png" style="height: 10em">
-        <img src="docs/assets/images/Winkel.png" style="height: 10em">
-        <img src="docs/assets/images/ESP8266.jpg" style="height: 10em">
-        <img src="docs/assets/images/DHT11.png" style="height: 10em">
-        <img src="docs/assets/images/Verbinder.png" style="height: 10em">
-        <img src="docs/assets/images/MQ135.png" style="height: 10em">
-        <img src="docs/assets/images/Matrix.png" style="height: 10em">
+        <img src="assets/images/Platine.png" style="height: 10em">
+        <img src="assets/images/Holzbrett.png" style="height: 10em">
+        <img src="assets/images/Taster.png" style="height: 10em">
+        <img src="assets/images/Buzzer.png" style="height: 10em">
+        <img src="assets/images/Steckleisten.png" style="height: 10em">
+        <img src="assets/images/Winkel.png" style="height: 10em">
+        <img src="assets/images/ESP8266.jpg" style="height: 10em">
+        <img src="assets/images/DHT11.png" style="height: 10em">
+        <img src="assets/images/Verbinder.png" style="height: 10em">
+        <img src="assets/images/MQ135.png" style="height: 10em">
+        <img src="assets/images/Matrix.png" style="height: 10em">
 </div>
 
 Diese Bauteile müssen korrekt verdrahtet bzw. miteinander verbunden werden, damit die entsprechenden Funktionen gegeben sind. Diese Aufgabe übernimmt die Platine für uns. Auf ihr befinden sich Leiterbahnen, die die Verbindungen zwischen den Modulen und dem Mikrocontroller herstellen.
 In der folgenden Abbildung ist der Schaltplan eures Gadgets zu sehen. Es fällt auf, dass jedes Bauteil  seinen eigenen Steckplatz hat. Die Größe der Bauteile sind auf der Platine angedeutet und  müssen korrekt gesteckt, sowie verlötet werden.
 Hierbei ist es wichtig auf die Polarität der Bauteile zu achten, und auf eine angemessene Verlötung Wert zu legen, damit jede Verbindung korrekt verbunden ist.
-![Schaltplan](docs/assets/images/Schaltplan.png)
+![Schaltplan](assets/images/Schaltplan.png)
 
 
