@@ -29,3 +29,30 @@ sind die Helden hinter den Dingen. Viele Geräte wären ohne einen Mikrocontroll
 Die Aufgaben sind vielfältig und so auch die Möglichkeiten, die sich dadurch ergeben. Ein Mikrocontroller muss für seine zu bewerkstelligende Aufgabe programmiert werden. Diesen Programmcode durchläuft der Mikrocontroller immer wieder „unendlich oft“. So führt er präzise seine Aufgabe aus und kommt dabei nicht durcheinander, denn er führt Zeile für Zeile in seinem programmierten Code aus. Dadurch wird auch deutlich, dass die Programmierung ein wesentlicher Bestandteil der Elektrotechnik ist und immer mehr Einzug erhält.
 
 ![ESP8266](docs/assets/images/ESP8266.png)
+
+## Aufbau
+Insgesamt besteht das Gadget aus den folgenden acht Bauteilen:
+* Platine 		
+* Holzbrett 	
+* Taster 		
+* Lautsprecher 	
+* Steckleiste 	
+* ESP8266 
+* DHT11 (Sensor) 
+* Verbinder 
+* MQ135 (Luftqualitätssensor) 
+* LED-Matrix
+
+<div class="flex-container" style="margin: 1em">
+        <img src="docs/assets/images/Platine.png" style="height: 5em">
+        <img src="docs/assets/images/Holzbrett.png" style="height: 5em">
+        <img src="docs/assets/images/Taster.png" style="height: 5em">
+        <img src="docs/assets/images/Buzzer.png" style="height: 5em">
+        <img src="docs/assets/images/Steckleisten.png" style="height: 5em">
+        <img src="docs/assets/images/Winkel.png" style="height: 5em">
+        <img src="docs/assets/images/ESP8266.png" style="height: 5em">
+        <img src="docs/assets/images/DHT11.png" style="height: 5em">
+        <img src="docs/assets/images/Verbinder.png" style="height: 5em">
+        <img src="docs/assets/images/MQ135.png" style="height: 5em">
+        <img src="docs/assets/images/Matrix.png" style="height: 5em">
+</div>
