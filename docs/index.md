@@ -1,3 +1,4 @@
+<div style="padding:1em;border-radius:0.5em;background-color:red">Dieses Dokument befindet sich aktuell im Aufbau. Die komplette Anleitung als PDF-Dokument und Videos ist <a href="https://github.com/spe-khe/LED-Gadget">hier</a> zu finden.</div>
 # SPE Karlsruhe - MultiMonG
 {:toc}
 ## Vorwort
@@ -61,5 +62,7 @@ Diese Bauteile müssen korrekt verdrahtet bzw. miteinander verbunden werden, dam
 In der folgenden Abbildung ist der Schaltplan eures Gadgets zu sehen. Es fällt auf, dass jedes Bauteil  seinen eigenen Steckplatz hat. Die Größe der Bauteile sind auf der Platine angedeutet und  müssen korrekt gesteckt, sowie verlötet werden.
 Hierbei ist es wichtig auf die Polarität der Bauteile zu achten, und auf eine angemessene Verlötung Wert zu legen, damit jede Verbindung korrekt verbunden ist.
 ![Schaltplan](assets/images/Schaltplan.png)
+Als erstes wollen wir die Steckverbinder verlöten. Diese müssen zu Beginn gekürzt werden, und anschließend verlötet werden. Dabei muss darauf geachtet werden, dass diese relativ gerade verlötet werden, damit die Bauteile, und insbesondere der ESP8266 hineingesteckt werden kann. In der folgenden Abbildung sind die Steckverbinder für den Microkontroller und der Led-Matrix zu sehen.
+![Aufbau: Steckverbinder](assets/images/3.3.png)
 
 
