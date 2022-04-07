@@ -1,5 +1,25 @@
-# LED-Gadget
+# SPE Karlsruhe - Multi-MonG
 
-Multi-MonG - 
-Downloade dir die folgende Datei:
-"00 - Start - Abfolge der Arbeitsschritte für dein Gadget"
+Dieses Dokument soll dir helfen dich in den Dateien (auf GitHub) zurechtzufinden. (Tipp: Berücksichtige die Versionen)
+Bevor du loslegst, empfiehlt es sich in der Anleitung (01 - Anleitung - Multi-Monitoring Gadget) die Kapitel 1 und 2 zu lesen.
+
+Tipp: Im Prozess entstehen Fragen, auf die man gerne sofort eine Antwort hätte. Aus diesem Grund haben wird eine PDF-Datei erstellt, mit häufig gestellten Fragen (FAQ - Häufig gestellte Fragen).
+     
+
+Schritt 1 - Baue das Gadget zusammen, dafür schaust du dir das Video >02 - Gadget Platinenbestückung< an. Der Aufbau des Gadgets ist in der Anleitung (Kapitel 3) niedergeschrieben und mit Bildern illustriert. 
+ACHTUNG: Es gibt zwei Versionen des Gadget. Wenn du die 2te Version hast, also v2, dann schau dir die entsprechenden Teile an. (Teil 1 und 2 sind gleich | Teil 3 und 4 nicht) 
+
+Schritt 2 - (Optional) Lies das 4te Kapitel aus der Anleitung.
+
+Schritt 3 - Downloade dir die Arduino Software - https://www.arduino.cc/en/software
+
+Schritt 4 - Programmierung vom Gadget - dafür schaust du dir die Videos an, die du im Ordner >03 - Programmierung Video< findest. Ergänzend dazu nutzt du am besten die Anleitung (Kapitel 5 - Anleitung – Programmierung - Multi-MonG). 
+Folgender Link wird zwischenzeitlich benötigt - http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+
+Schritt 5 - Gadget nutzen und betreiben - Anleitung (Kapitel 6 - Inbetriebnahme).
+
+Schritt 6 - Luftsensor richtig nutzen und einstellen - Anleitung (Kapitel 7 -	Inbetriebnahme des Sensors für die Luftqualität).
+
+Schritt 7 - Schlusswort aus der Anleitung (Kapitel 8)
+ 
