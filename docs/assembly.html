@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <title>Aufbau</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+
+        <h1 id="project_title">Multi-MonG</h1>
+        <h2 id="project_tagline">Multi-Monitoring Gadget der SPE Karlsruhe</h2>
+
+
+    </header>
+</div>
+
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <iframe src="assets/html/table_of_contents.html"
+                onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+
+        <h1 id="aufbau">Aufbau</h1>
+        <p>Insgesamt besteht das Gadget aus den folgenden acht Bauteilen:</p>
+        <ul>
+            <li>Platine</li>
+            <li>Holzbrett</li>
+            <li>Taster</li>
+            <li>Lautsprecher</li>
+            <li>Steckleiste</li>
+            <li>ESP8266</li>
+            <li>DHT11 (Sensor)</li>
+            <li>Verbinder</li>
+            <li>MQ135 (Luftqualitätssensor)</li>
+            <li>LED-Matrix</li>
+        </ul>
+
+        <div class="flex-container" style="margin: 1em">
+            <img alt="Platine" src="assets/images/Platine.png" style="height: 5em"/>
+            <img alt="Holzbrett" src="assets/images/Holzbrett.png" style="height: 5em"/>
+            <img alt="Taster" src="assets/images/Taster.png" style="height: 5em"/>
+            <img alt="Lautsprecher" src="assets/images/Buzzer.png" style="height: 5em"/>
+            <img alt="Steckleiste" src="assets/images/Steckleisten.png" style="height: 5em"/>
+            <img alt="Winkelsteckverbinder" src="assets/images/Winkel.png" style="height: 5em"/>
+            <img alt="ESP8266" src="assets/images/ESP8266.jpg" style="height: 5em"/>
+            <img alt="DHT11 (Sensor)" src="assets/images/DHT11.png" style="height: 5em"/>
+            <img alt="Verbinder" src="assets/images/Verbinder.png" style="height: 5em"/>
+            <img alt="MQ135 (Luftqualitätssensor)" src="assets/images/MQ135.png" style="height: 5em"/>
+            <img alt="LED-Matrix" src="assets/images/Matrix.png" style="height: 5em"/>
+        </div>
+
+        <p>Diese Bauteile müssen korrekt verdrahtet bzw. miteinander verbunden werden, damit die entsprechenden
+            Funktionen gegeben sind. Diese Aufgabe übernimmt die Platine für uns. Auf ihr befinden sich Leiterbahnen,
+            die die Verbindungen zwischen den Modulen und dem Mikrocontroller herstellen.
+            In der folgenden Abbildung ist der Schaltplan eures Gadgets zu sehen. Es fällt auf, dass jedes Bauteil
+            seinen eigenen Steckplatz hat. Die Größe der Bauteile sind auf der Platine angedeutet und müssen korrekt
+            gesteckt, sowie verlötet werden.
+            Hierbei ist es wichtig auf die Polarität der Bauteile zu achten, und auf eine angemessene Verlötung Wert zu
+            legen, damit jede Verbindung korrekt verbunden ist.</p>
+
+        <p><img src="assets/images/Schaltplan.png" alt="Schaltplan"/></p>
+
+        <p>Als erstes wollen wir die Steckverbinder verlöten. Diese müssen zu Beginn gekürzt werden, und anschließend
+            verlötet werden. Dabei muss darauf geachtet werden, dass diese relativ gerade verlötet werden, damit die
+            Bauteile, und insbesondere der ESP8266 hineingesteckt werden kann. In der folgenden Abbildung sind die
+            Steckverbinder für den Microcontroller und der Led-Matrix zu sehen.</p>
+
+        <p><img src="assets/images/3.3.png" alt="Aufbau: Steckverbinder"/></p>
+
+        <p>Als nächstes kann der Piezo-Lautsprecher verlötet werden, hierbei ist auf die Polarität zu achten. Nach dem
+            Verlöten vom Piezo-Lautsprecher müssen seine langen Beine gekürzt werden. Anschließend sind die Taster
+            dran, diese können hinein geklickt werden, und müssen ebenfalls verlötet werden. Somit fehlt noch der DHT11
+            Sensor, der ebenfalls verlötet werden muss, auch hier muss auf die Polarität geachtet werden (siehe Bild).
+            Im Anschluss werden die Abstandshalter in die Platine gesteckt. In Summe sieht es anschließend wie folgt
+            aus:
+            <img src="assets/images/3.4.png" alt="Aufbau: Vorderseite"/>
+            <img src="assets/images/3.5.png" alt="Aufbau: Rückseite"/>
+            <img src="assets/images/3.6.png" alt="Aufbau: DHT11 Sensor"/></p>
+
+        <p>Daraufhin folgt der vorletzte Arbeitsschritt, welcher darin besteht, die LED-Matrix auf die Abstandshalter zu
+            stecken und eine Verbindung mit der Platine herzustellen. Tipp: Stelle eine sichere Verbindung der
+            Steckleiste und der schrägen Steckleiste der LED-Matrix her (darf feste gedrückt oder auch zusätzlich
+            verlötet werden). Der letzte Schritt besteht darin, den ESP8266 in die Steckleiste zu drücken und die
+            Platine schräg mit einem tropfen Sekundenkleber in das Holzbrett zu stecken. Anschließend muss das Gadget
+            Multi-MonG programmiert werden, damit es mit der Erklärung in Kapitel 4 gesteuert werden kann.
+            <img src="assets/images/3.7.png" alt="Aufbau: Gadget"/></p>
+
+        <div id="navigation">
+            <a href="index.html"><div id="navigation_left" class="nav_prev"><< Einführung</div></a>
+            <a href="programming.html"><div id="navigation_right" class="nav_next">Programmierung >></div></a>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+
+        <p class="copyright">LED-Gadget maintained by <a href="https://github.com/spe-khe">spe-khe</a></p>
+
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+    </footer>
+</div>
+</body>
+</html>
