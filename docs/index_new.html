@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <title>Einführung</title>
+</head>
+<body>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+
+        <h1 id="project_title">Multi-MonG</h1>
+        <h2 id="project_tagline">Multi-Monitoring Gadget der SPE Karlsruhe</h2>
+
+
+    </header>
+</div>
+
+<!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <div style="padding:1em;border-radius:0.5em;background-color:red">Dieses Dokument befindet sich aktuell im
+            Aufbau. Die komplette Anleitung als PDF-Dokument und Videos ist <a
+                    href="https://github.com/spe-khe/LED-Gadget">hier</a> zu finden.
+        </div>
+        <p>Diese Website soll dir das Gadget (Multi-Monitoring Gadget)
+            näherbringen. Dazu ist sie in mehrere Seiten unterteilt, die verschiedene Aspekte behandeln. Zur Navigation
+            kannst du die Buttons am unteren Ende der Seite benutzen, oder du springst hier direkt zu einer der
+            Seiten:</p>
+
+        <iframe src="assets/html/table_of_contents.html"
+                onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        <h1 id="einführung">Einführung</h1>
+        <p>Das Gadget ist eine Station mit insgesamt sieben Funktionen. Diese Funktionen werden mit einem
+            Microcontroller und verschiedenen Modulen realisiert. Diese Funktionen sind:</p>
+        <ol>
+            <li>Anzeigen der aktuellen Uhrzeit</li>
+            <li>Anzeigen der Temperatur</li>
+            <li>Anzeigen der Luftfeuchte</li>
+            <li>Anzeigen des Timers</li>
+            <li>Anzeigen einer eigenen Nachricht</li>
+            <li>Anzeigen der Luftqualität</li>
+            <li>Zyklisches wechseln (5 Sekunden), zwischen Funktion eins, zwei, drei und sechs</li>
+        </ol>
+
+        <p>Auf die Funktionen wird in den nächsten Kapiteln ausführlicher eingegangen.
+            Ein Mikrocontroller ist ein „kleiner mini Computer“. Sie sind im Alltag eher unbekannt und
+            sind die Helden hinter den Dingen. Viele Geräte wären ohne einen Mikrocontroller undenkbar. Meistens werden
+            sie für Steuerungs- und Kommunikationsaufgaben eingesetzt. So finden sie z.B. in den folgenden Geräten und
+            Anwendungen ihren Platz:</p>
+        <ul>
+            <li>Radio</li>
+            <li>Roboter</li>
+            <li>Fernseher</li>
+            <li>Flugzeuge</li>
+            <li>Fernbedienungen</li>
+            <li>Waschmaschinen</li>
+            <li>Intelligente Systeme z.B. Airbag</li>
+            <li>Intelligente Systeme in der Automatisierung</li>
+            <li>Erfassung von Messwerten z.B. Drehzahl</li>
+        </ul>
+
+        <p>Die Aufgaben sind vielfältig und so auch die Möglichkeiten, die sich dadurch ergeben. Ein Mikrocontroller
+            muss für seine zu bewerkstelligende Aufgabe programmiert werden. Diesen Programmcode durchläuft der
+            Mikrocontroller immer wieder „unendlich oft“. So führt er präzise seine Aufgabe aus und kommt dabei nicht
+            durcheinander, denn er führt Zeile für Zeile in seinem programmierten Code aus. Dadurch wird auch deutlich,
+            dass die Programmierung ein wesentlicher Bestandteil der Elektrotechnik ist und immer mehr Einzug erhält.
+            Wir verwenden in dem Gadget den Mikrocontroller ESP2866:
+            <img src="assets/images/ESP8266.jpg" alt="ESP8266"/></p>
+
+        <div id="navigation">
+            <a href="assembly.html"><div id="navigation_right" class="nav_next">Aufbau >></div></a>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+
+        <p class="copyright">LED-Gadget maintained by <a href="https://github.com/spe-khe">spe-khe</a></p>
+
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+    </footer>
+</div>
+</body>
+</html>
