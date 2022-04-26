@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
-    <title>Aufbau</title>
+    <title>Programmierung</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
@@ -20,7 +20,7 @@
 
 <div id="main_content_wrap" class="outer">
     <section id="main_content" class="inner">
-        <iframe src="assets/html/table_of_contents.html"
+        <iframe src="table_of_contents.html"
                 onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
         <h1>Programmierung</h1>
         <p>
@@ -112,12 +112,35 @@ If ( test < 10 ) // Bedingung ob test
 }
 Anmerkung: Anweisungen müssen mit einem > ; <, Semikolon abgeschlossen werden.
         </code></pre>
+        <p>
+            Als nächstes wird der Programmcode als Flussdiagramm dargestellt. Dies hat den Grund,
+            dass man mit diesem einfach und schnell ein Programm analysieren, sowie verstehen kann.
+            Die dabei verwendeten Symbole sind die folgenden:
+        </p>
+        <table>
+            <tbody style="vertical-align: middle">
+            <tr><td><img src="assets/images/flowchart_start.png" alt="Abgerundetes Rechteck" class="inline_symbol"></td><td>Signalisiert den Start und das Ende</td></tr>
+            <tr><td><img src="assets/images/flowchart_branch.png" alt="Raute" class="inline_symbol"></td><td>Entscheidungen</td></tr>
+            <tr><td><img src="assets/images/flowchart_action.png" alt="Rechteck" class="inline_symbol"></td><td>Anweisungen</td></tr>
+            </tbody>
+        </table>
+
+        <p>
+            Das Fluss-Diagramm ist relativ leicht zu verstehen und ist in Pfeilrichtung zu lesen.
+        </p>
+
+        <img src="assets/images/4.2.png" alt="Flussdiagramm">
+        <p>
+            Nochmal als Wiederholung, es gibt ein Interrupt, dieser wird jede Sekunde ausgelöst und erhöht
+            den Wert der Variablen - Sekunde - um eins.
+        </p>
+
         <div id="navigation">
             <a href="assembly.html">
                 <div id="navigation_left" class="nav_prev"><< Aufbau</div>
             </a>
-            <a href="assembly.html">
-                <div id="navigation_right" class="nav_next">Aufbau >></div>
+            <a href="programming_upload.html">
+                <div id="navigation_right" class="nav_next">Programm hochladen >></div>
             </a>
         </div>
     </section>
