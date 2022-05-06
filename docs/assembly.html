@@ -24,7 +24,7 @@
                 onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
         <p>Dieser Teil der Anleitung ist <a href="assembly_videos.html">hier</a> auch in Videoform verfügbar</p>
         <h1 id="aufbau">Aufbau</h1>
-        <p>Insgesamt besteht das Gadget aus den folgenden acht Bauteilen:</p>
+        <p>Insgesamt besteht das Gadget aus den folgenden Bauteilen:</p>
         <ul>
             <li>Platine</li>
             <li>Holzbrett</li>
@@ -38,7 +38,7 @@
             <li>LED-Matrix</li>
         </ul>
 
-        <div class="flex-container" style="margin: 1em">
+        <div class="flex-container" style="margin: 0em">
             <img alt="Platine" src="assets/images/Platine.png" style="height: 5em"/>
             <img alt="Holzbrett" src="assets/images/Holzbrett.png" style="height: 5em"/>
             <img alt="Taster" src="assets/images/Taster.png" style="height: 5em"/>
@@ -55,42 +55,54 @@
         <p>Diese Bauteile müssen korrekt verdrahtet bzw. miteinander verbunden werden, damit die entsprechenden
             Funktionen gegeben sind. Diese Aufgabe übernimmt die Platine für uns. Auf ihr befinden sich Leiterbahnen,
             die die Verbindungen zwischen den Modulen und dem Mikrocontroller herstellen.
-            In der folgenden Abbildung ist der Schaltplan eures Gadgets zu sehen. Es fällt auf, dass jedes Bauteil
-            seinen eigenen Steckplatz hat. Die Größe der Bauteile sind auf der Platine angedeutet und müssen korrekt
-            gesteckt, sowie verlötet werden.
-            Hierbei ist es wichtig auf die Polarität der Bauteile zu achten, und auf eine angemessene Verlötung Wert zu
-            legen, damit jede Verbindung korrekt verbunden ist.</p>
+            In der folgenden Abbildung ist der Schaltplan des Gadgets zu sehen, also die Verbindungen zwischen den
+            Bauteilen, die auf der Platine umgesetzt sind.</p>
 
         <p><img src="assets/images/Schaltplan.png" alt="Schaltplan"/></p>
 
-        <p>Als erstes wollen wir die Steckverbinder verlöten. Diese müssen zu Beginn gekürzt werden, und anschließend
-            verlötet werden. Dabei muss darauf geachtet werden, dass diese relativ gerade verlötet werden, damit die
-            Bauteile, und insbesondere der ESP8266 hineingesteckt werden kann. In der folgenden Abbildung sind die
-            Steckverbinder für den Microcontroller und der Led-Matrix zu sehen.</p>
+        <p>Als erstes werden die Steckverbinder für den Microcontroller, die Sensoren und die LED-Matrix verlötet. Diese
+            müssen zunächst
+            mit einem Seitenschneider auf die richtige Länge gekürzt werden.</p>
+        <img src="assets/images/assembly/pin1.jpg" alt="Stiftleisten kürzen">
+        <p> Die Steckleisten für den Mikrocontroller
+            werden auf diesen aufgesteckt, dann wird das Ganze an der markierten Stelle in die Platine gesteckt
+            und von der Rückseite verlötet.</p>
+        <img src="assets/images/assembly/pin2.jpg" alt="Stiftleisten auf Microcontroller aufstecken">
+        <p> Die Steckleisten für die Sensoren und die LED-Matrix werden einzeln in die
+            markierten Steckplätze (J1-3) eingesteckt und verlötet. Achtung bei der LED-Matrix: diese sitzt auf der
+            Vorderseite der Platine, während alle anderen Steckleisten auf der Rückseite der Platine angebracht
+            werden.</p>
+        <img src="assets/images/assembly/pin3.jpg" alt="Rückseite mit Stiftleisten">
+        <img src="assets/images/assembly/pin4.jpg" alt="Vorderseite mit Stiftleisten">
 
-        <p><img src="assets/images/3.3.png" alt="Aufbau: Steckverbinder"/></p>
+        <p>Nun werden die Taster verbaut, diese werden von der Vorderseite durch die Platine gesteckt und auf der
+            Rückseite verlötet</p>
+        <img src="assets/images/assembly/but.jpg">
 
-        <p>Als nächstes kann der Piezo-Lautsprecher verlötet werden, hierbei ist auf die Polarität zu achten. Nach dem
-            Verlöten vom Piezo-Lautsprecher müssen seine langen Beine gekürzt werden. Anschließend sind die Taster
-            dran, diese können hinein geklickt werden, und müssen ebenfalls verlötet werden. Somit fehlt noch der DHT11
-            Sensor, der ebenfalls verlötet werden muss, auch hier muss auf die Polarität geachtet werden (siehe Bild).
-            Im Anschluss werden die Abstandshalter in die Platine gesteckt. In Summe sieht es anschließend wie folgt
-            aus:
-            <img src="assets/images/3.4.png" alt="Aufbau: Vorderseite"/>
-            <img src="assets/images/3.5.png" alt="Aufbau: Rückseite"/>
-            <img src="assets/images/3.6.png" alt="Aufbau: DHT11 Sensor"/></p>
-
-        <p>Daraufhin folgt der vorletzte Arbeitsschritt, welcher darin besteht, die LED-Matrix auf die Abstandshalter zu
-            stecken und eine Verbindung mit der Platine herzustellen. Tipp: Stelle eine sichere Verbindung der
-            Steckleiste und der schrägen Steckleiste der LED-Matrix her (darf feste gedrückt oder auch zusätzlich
-            verlötet werden). Der letzte Schritt besteht darin, den ESP8266 in die Steckleiste zu drücken und die
-            Platine schräg mit einem tropfen Sekundenkleber in das Holzbrett zu stecken. Anschließend muss das Gadget
-            Multi-MonG programmiert werden, damit es mit der Erklärung in Kapitel 4 gesteuert werden kann.
-            <img src="assets/images/3.7.png" alt="Aufbau: Gadget"/></p>
+        <p>Als letztes wird der Piezo-Lautsprecher verlötet, hierbei muss auf die Polarität geachtet werden: Das
+            auf die Platine aufgedruckte "+" muss mit dem "+" auf dem Lautsprecher übereinstimmen. Nachdem er durch die
+            Platine gesteckt und verlötet wurde, können die überstehenden Beine mit einem Seitenschneider gekürzt
+            werden.</p>
+        <img src="assets/images/assembly/buz.jpg">
+        <p>Nun kann das Gadget zusammengebaut werden. Zunächst werden die Abstandhalter in die Löcher in der LED-Matrix
+            gesteckt und der Winkelsteckverbinder auf die Pins der LED-Matrix gesteckt.</p>
+        <img src="assets/images/assembly/led1.jpg">
+        <img src="assets/images/assembly/led2.jpg">
+        <p>Anschließend wird die LED-Matrix auf die Platine aufgesteckt.</p>
+        <img src="assets/images/assembly/asy1.jpg">
+        <img src="assets/images/assembly/asy2.jpg">
+        <p>Nun können auch die restlichen Komponenten auf ihre Steckplätze gesteckt werden.</p>
+        <img src="assets/images/assembly/asy3.jpg">
+        <p>Zuletzt wird das Gadget schräg in das Holzbrett gesteckt, dann ist es fertig zusammengebaut.</p>
+        <img src="assets/images/assembly/cpl.jpg">
 
         <div id="navigation">
-            <a href="index.html"><div id="navigation_left" class="nav_prev"><< Einführung</div></a>
-            <a href="programming.html"><div id="navigation_right" class="nav_next">Programmierung >></div></a>
+            <a href="index.html">
+                <div id="navigation_left" class="nav_prev"><< Einführung</div>
+            </a>
+            <a href="programming.html">
+                <div id="navigation_right" class="nav_next">Programmierung >></div>
+            </a>
         </div>
     </section>
 </div>
