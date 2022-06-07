@@ -24,117 +24,98 @@
                 onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
         <h1>Programmierung</h1>
         <p>
-            Vorab muss erwähnt werden, dass die Programmierung so einfach wie möglich gehalten
-            wurde, wodurch auf gewisse Konventionen bewusst verzichtet wurde.<br>
-            Betrachtet man einen beliebigen Programmcode, dann besteht dieser aus mehreren Elementen
-            bzw. Abschnitten.
-        </p>
-        <p>Die wesentlichen Abschnitte sind die folgenden:</p>
-        <pre><code>
-// Beschreibung von Ihrem Programm
-#include <…> // Eintragung der benötigten Bibliotheken
-#define A 5 // Eigene Definitionen
-void Setup() // Dieser Programmteil wird einmal, beim Start, ausgeführt
-{
-    Ihre Anweisungen; // Anweisungen die nur einmalig ausgeführt werden müssen
-}
-void Loop() // Dieser Programmteil wird immer wieder ausgeführt
-{
-    Ihre Anweisungen; // Anweisungen die wiederholt ausgeführt werden müssen
-}
-        </code></pre>
-        <p>
-            Man kann sich leicht vorstellen, dass in der void Loop beliebig viele komplexe Funktionen
-            aufgerufen werden können. Hierdurch kann ein Programmcode übersichtlich, sowie leicht zu
-            verstehen, programmiert werden.
+            Für die Programmierung des Gadgets wird die "Arduino IDE" benötigt. Diese kann
+            <a href="https://www.arduino.cc/en/software">hier</a> heruntergeladen werden und muss anschließend
+            installiert werden. Nun muss noch die Unterstützung für den verwendeten Mikrocontroller eingerichtet werden.
+            Dazu werden in der Arduino IDE die Einstellungen geöffnet (Datei>Voreinstellungen) und unter "Zusätzliche
+            Boardverwalter-URLs" die folgende URL eingetragen:
+            <br>
+            <code>http://arduino.esp8266.com/stable/package_esp8266com_index.json</code>
+            <br>
+            Nun wird der Boardverwalter geöffnet (Werkzeuge>Board>Boardverwalter) und dort das Paket "esp8266"
+            installiert.
         </p>
         <p>
-            Insgesamt gibt es sechs Funktionen: Uhrzeit, Temperatur, Luftfeuchte, Timer, eigene Nachricht,
-            zyklischer Wechsel und Internetseite. Dabei darf man nicht das Hauptprogramm, das
-            vorhin vorgestellt wurde, vergessen. Somit würde man daraus schließen, dass es sieben Funktionen
-            und das Hauptprogramm gibt. Leider stimmt dies nicht ganz, da es noch die Module,
-            Taster, Led-Matrix und Lautsprecher gibt. Diese Ein - und Ausgabe von Signalen muss natürlich
-            auch gehandhabt werden. Aus diesem Grund kommen demnach noch drei zusätzliche
-            Funktionen hinzu.
+            Für das Gadget gibt es zwei Programme, zwischen denen gewählt werden kann. Mit dem ersten Programm
+            zeigt es die Uhrzeit, Temperatur, Luftfeuchtigkeit und Luftqualität an. Zusätzlich kann ein
+            Timer gestellt und eine Laufschrift angezeigt werden. Das Programm kann hier heruntergeladen werden:
+            <br>
+            <a href="https://github.com/spe-khe/LED-Gadget/raw/master/MultiMonG.zip" class="dl_link">MultiMonG.zip</a>
         </p>
         <p>
-            Unter dem Strich bedeutet dies, dass es 11 Funktionen und ein Hauptprogramm gibt.
-            Schematisch dargestellt, sieht dies so aus:
-        </p>
-        <img src="assets/images/4.1.png" alt="Schema Programmaufbau">
-        <p>
-            Weitergehend mit Interrupts, welche dafür da sind, einen bestimmten Programmcode in Abhängigkeit
-            von einem Ereignis abzuarbeiten. In unserem Fall haben wir Interrupts dafür verwendet,
-            um die Sekunden zu zählen. Dies bedeutet, dass wir durch das Zählen der Sekunden,
-            in der Lage sind, eine Uhr zu programmieren. Zusätzlich wurde, das Zählen der Sekunden für
-            das zyklische Wechseln der Modi genutzt.
+            Das zweite Programm implementiert das klassische Computerspiel "Snake", das mit den zwei tastern gespielt
+            wird. Das Programm kann hier heruntergeladen werden:
+            <br>
+            <a href="https://github.com/spe-khe/LED-Gadget/raw/master/Snake.zip" class="dl_link">Snake.zip</a>
         </p>
         <p>
-            Leider lernt man das Programmieren, weder über Nacht noch über eine Eingebung. Programmieren
-            ist ein logischer Prozess, bei dem Zeile für Zeile programmiert und vom Mikrocontroller
-            abgearbeitet wird. In unserem Fall wurde der Mikrocontroller in der Programmiersprache
-            C programmiert.
+            Nach dem Herunterladen muss die .zip-Datei entpackt werden. In dieser gibt es den Unterordner "libraries".
+            Der Inhalt dieses Ordners muss unter Dokumente/Arduino/libraries eingefügt werden. Anschließend kann die
+            Datei "MultiMonG.ino" bzw. "Snake.ino" aus der .zip-Datei in der Arduino IDE geöffnet werden.
         </p>
         <p>
-            Als Beispiel soll die Uhrzeit bzw. deren Programmcode vorgestellt werden.
-            Für diese benötigt man im Wesentlichen drei Variablen:
-        </p>
-        <ol>
-            <li>Sekunden</li>
-            <li>Minuten</li>
-            <li>Stunden</li>
-        </ol>
-        <p>
-            Für diese Funktion wird im Wesentlichen die If-Else-Verzweigung genutzt. Diese Verzweigung
-            überprüft, ob eine Bedingung erfüllt ist und führt bei erfüllter Bedingung einen Programmcode
-            aus. Zu erwähnen ist, dass die Funktion, Internetseite, eine Variable auf „1“ setzt,
-            wenn der Nutzer die Uhrzeit stellen möchte. Dadurch werden die folgenden Variablen benötigt:
-        </p>
-        <ol>
-            <li>Sekunden_stellen</li>
-            <li>Minuten_stellen</li>
-            <li>Stunden_stellen</li>
-        </ol>
-        <p>
-            Diese Variablen sind dafür dar, damit die Uhrzeit neu gesetzt werden kann. Zusätzlich kann
-            man sich vorstellen, dass es unterschiedliche Variablen gibt. Die verwendeten Variablen sind
-            vom Typ "Integer", abgekürzt int. Variablen vom Typ int sind ganze Zahlen.
+            Das Gadget wird nun mit einem USB-Kabel an den Computer angeschlossen.
         </p>
         <p>
-            Wir stellen uns vor, dass wir eine Variable "test" hätten. Als Beispiel wollen wir abfragen,
-            ob die Variable test größer als die Zahl 10 ist. Wenn dieser Fall eintritt, dann wird die Variable
-            test um 1 erhöht.
+            Jetzt wird der verwendete Mikrocontroller ausgewählt (Werkzeuge>Board>ESP8266 Boards>NodeMCU 1.0), sowie der
+            Port, an den der Mikrocontroller angeschlossen ist (Werkzeuge>Port). Wenn es hier mehrere
+            Auswahlmöglichkeiten gibt, kann man das Gadget wieder vom Computer trennen und dabei beobachten, welcher
+            Port verschwindet bzw. dazu kommt.
+            <br>
+            Jetzt kann das Programm durch einen Klick auf "Hochladen" (Der Pfeil oben links) auf das Gadget geladen
+            werden.
         </p>
-        <pre><code>
-If ( test < 10 ) // Bedingung ob test
-{
-    test = test + 1; // Das ist eine Anweisung
-}
-Anmerkung: Anweisungen müssen mit einem > ; <, Semikolon abgeschlossen werden.
-        </code></pre>
-        <p>
-            Als nächstes wird der Programmcode als Flussdiagramm dargestellt. Dies hat den Grund,
-            dass man mit diesem einfach und schnell ein Programm analysieren, sowie verstehen kann.
-            Die dabei verwendeten Symbole sind die folgenden:
-        </p>
-        <table>
-            <tbody style="vertical-align: middle">
-            <tr><td><img src="assets/images/flowchart_start.png" alt="Abgerundetes Rechteck" class="inline_symbol"></td><td>Signalisiert den Start und das Ende</td></tr>
-            <tr><td><img src="assets/images/flowchart_branch.png" alt="Raute" class="inline_symbol"></td><td>Entscheidungen</td></tr>
-            <tr><td><img src="assets/images/flowchart_action.png" alt="Rechteck" class="inline_symbol"></td><td>Anweisungen</td></tr>
-            </tbody>
-        </table>
 
         <p>
-            Das Fluss-Diagramm ist relativ leicht zu verstehen und ist in Pfeilrichtung zu lesen.
+            Während das Gadget programmiert wird, gucken wir uns kurz den Aufbau des Programms an:
         </p>
-
-        <img src="assets/images/4.2.png" alt="Flussdiagramm">
         <p>
-            Nochmal als Wiederholung, es gibt ein Interrupt, dieser wird jede Sekunde ausgelöst und erhöht
-            den Wert der Variablen - Sekunde - um eins.
+            Hier soll es nur um den groben Aufbau der Programme gehen, zur genaueren Erläuterung dienen Kommentare, die
+            direkt im Programm stehen:
         </p>
+        <pre><code>/*
+ *  So markierte Programmteile sind Kommentare, diese dienen nur der
+ *  Erläuterung des Programms.
+ */
 
+// Auch so markierte Zeilen sind Kommentare</code></pre>
+
+        <p>
+            Am Anfang des Programms werden Bibliotheken importiert, das sind Dateien mit komplexerem Code, die für die
+            einzelnen Bauteile zur Verfügung gestellt werden. So müssen wir nicht alle Funktionen selbst implementieren.
+        </p>
+        <pre><code>#include &ltMD_MAX72xx.h&gt	// LED-Matrix
+#include &ltArduino.h&gt	// Standard Arduino-Bibliothek
+...</code></pre>
+        <p>
+            Danach folgen einige Definitionen, hier werden bestimmte konstante Werte festgelegt, die dann im Programm
+            benutzt werden. So sind alle Werte, die vielleicht später noch verändert werden könnten (z.B. die Pins des
+            Mikrocontrollers, an die Sensoren etc. angeschlossen sind) an nur einer Stelle eingetragen.
+        </p>
+        <pre><code>#define BTN1_PIN D3
+#define BTN2_PIN D2</code></pre>
+        <p>
+            Nun werden noch Variablen angelegt, die im Programm benutzt und verändert werden. Im MultiMonG-Programm
+            können einige dieser Variablen nach Belieben verändert werden, z.B. Name und Passwort des ausgesendeten
+            WLAN-Netzwerkes.
+        </p>
+        <pre><code>char SSID[50] = "Siemens-MultiMonG";
+char PASSWORD[50] = "12345678";</code></pre>
+        <p>
+            Erst jetzt werden die Funktionen definiert, also der Teil des Programms, der das Verhalten des Gadgets
+            direkt steuert. Dies sind im Wesentlichen zwei Funktionen:
+        </p>
+        <pre><code>void setup() {
+    ...
+    Diese Funktion wird beim Start des Gadgets einmal ausgeführt
+    ...
+}
+
+void loop() {
+    ...
+    Diese Funktion wird danach immer wieder ausgeführt
+    ...
+}</code></pre>
         <div id="navigation">
             <a href="assembly.html">
                 <div id="navigation_left" class="nav_prev"><< Aufbau</div>
