@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <title>Bedienung</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+    <header class="inner">
+
+        <h1 id="project_title">Multi-MonG</h1>
+        <h2 id="project_tagline">Multi-Monitoring Gadget der SPE Karlsruhe</h2>
+
+
+    </header>
+</div>
+
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+        <iframe src="table_of_contents.html"
+                onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+        <h1>Bedienung des MultiMonG</h1>
+
+        <p>
+            Wurde das Programm "MultiMonG" auf das Gadget geladen, zeigt es zunächst 00:00 als aktuelle Uhrzeit an. Mit
+            dem rechten Taster am Gerät kann zwischen den verschiedenen Modi (Uhr, Temperatur, Luftfeuchte, CO2-Gehalt,
+            Timer,
+            Laufschrift, zyklischer Wechsel) gewechselt werden. Der Timer kann mit dem linken Taster gestartet werden.
+        </p>
+        <p>
+            Weitere Bedienfunktionen können über das WLAN-Netzwerk des Gadgets erreicht werden. Dazu verbindet man sich
+            über ein anderes Gerät mit dem WLAN-Netzwerk, das die im Programm eingestellten Zugangsdaten hat. Die
+            meisten Geräte leiten nun automatisch auf die "Anmeldeseite des Netzwerks" weiter, andernfalls kann das
+            Gadget erreicht werden, indem man die IP-Adresse <a href="http://192.168.4.1">192.168.4.1</a> in die
+            Adresszeile
+            eines Browsers eingibt. Es erscheint die folgende Homepage:
+        </p>
+        <img src="assets/images/homepage.png" alt="Bedienhomepage des MultiMonG">
+        <p>
+            Durch die Buttons im oberen Teil der Website lässt sich direkt der Modus des Gadgets einstellen. Im Block
+            darunter kann die aktuelle Uhrzeit eingestellt werden sowie die Zeit des Timers. Ganz unten kann ein eigener
+            Text eingestellt werden, der als Laufschrift angezeigt wird.
+        </p>
+        <div id="navigation">
+            <a href="assembly.html">
+                <div id="navigation_left" class="nav_prev"><< Aufbau</div>
+            </a>
+            <a href="manual.html">
+                <div id="navigation_right" class="nav_next">Programm hochladen >></div>
+            </a>
+        </div>
+    </section>
+</div>
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+    <footer class="inner">
+
+        <p class="copyright">LED-Gadget maintained by <a href="https://github.com/spe-khe">spe-khe</a></p>
+
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+    </footer>
+</div>
+</body>
+</html>
